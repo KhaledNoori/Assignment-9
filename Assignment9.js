@@ -51,3 +51,16 @@ const person1={
 }
 
 //console.log(person.Details());
+
+//--------------------------
+// question 6
+
+const car ={
+
+    start:function(){
+
+        return "  you start the engin"
+    }
+}
+
+console.log(car.start());
