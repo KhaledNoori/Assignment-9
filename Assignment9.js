@@ -20,9 +20,24 @@ function mystring(value){
 
 let x = "out of the function";
 function fun1(){
-    console.log(x);
+    // console.log(x);
 }
 fun1();
 
+//--------------------------
+// question 4
 
+const person={
+    Name:"Ali",
+    Age:25,
+    Address:"Herat Afghanistan ",
+    Details:function(){
+      
+         return this.Name+" "+this.Age+" "+this.Address;
+    }
+}
 
+// console.log(person.Details());
+
+//--------------------------
+// question 5
