@@ -75,3 +75,16 @@ if(JSON.stringify(obj1) === JSON.stringify(obj2)) {
 } else {
     // console.log("The objects are different.");
 }
+
+//--------------------------
+// question 8
+
+class book{
+constructor(Title,Author){
+   this.Title=Title;
+   this.Author=Author;
+}
+}
+
+const mybook=new book("javascript","Ali Ahmad Noori");
+console.log(mybook.Title+" was Written by "+mybook.Author);
