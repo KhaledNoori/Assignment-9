@@ -2,7 +2,7 @@
 
 //..........................
 
-// question 2
+// question 1
 function sum(a,b){
     return a + b;
 }
@@ -30,14 +30,24 @@ fun1();
 const person={
     Name:"Ali",
     Age:25,
-    Address:"Herat Afghanistan ",
-    Details:function(){
-      
-         return this.Name+" "+this.Age+" "+this.Address;
-    }
+    Address:"Herat Afghanistan "
+
 }
 
-// console.log(person.Details());
+
+//  console.log(person.Name);
 
 //--------------------------
 // question 5
+
+const person1={
+    Name:"Ali",
+    Age:25,
+    Address:"Herat Afghanistan ",
+    Details: function(){
+      
+        return this.Name+" "+this.Age+" "+this.Address;
+    }
+}
+
+//console.log(person.Details());
