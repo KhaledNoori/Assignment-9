@@ -14,5 +14,15 @@ function mystring(value){
     return value.split('').reverse().join("");
 }
 
-console.log(mystring("ali"));
+// console.log(mystring("ali"));
+//--------------------------
+// question 3 
+
+let x = "out of the function";
+function fun1(){
+    console.log(x);
+}
+fun1();
+
+
 
