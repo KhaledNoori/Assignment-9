@@ -63,4 +63,15 @@ const car ={
     }
 }
 
-console.log(car.start());
+// console.log(car.start());
+
+//--------------------------
+// question 7
+const obj1 = { name: "Aliahmad", age: 30 };
+const obj2 = { name: "Ali", age: 3 };
+
+if(JSON.stringify(obj1) === JSON.stringify(obj2)) {
+    // console.log("The objects have the same properties.");
+} else {
+    // console.log("The objects are different.");
+}
