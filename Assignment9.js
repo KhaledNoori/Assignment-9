@@ -219,3 +219,21 @@ class computer{
 //--------------------------
 // question 17
 
+class phone{
+
+    constructor(brand){
+        this.phoneName = brand;
+    }
+    set ph(x){
+        this.phoneName=x;
+    }
+
+    get ph(){
+        return this.phoneName;
+    }
+}
+
+let p = new phone();
+
+p.ph='apple';
+console.log(p.ph);
