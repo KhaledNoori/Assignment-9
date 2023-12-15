@@ -199,3 +199,23 @@ const person4={
 
 // console.log(person3.inform.call(person4));
 // console.log(person3.inform.apply(person4));
+
+//--------------------------
+// question 16
+
+class computer{
+    constructor(Name){
+        this.Name=Name;
+    }
+    static Laptop(){
+        return "Dell";
+    }
+}
+
+ const comp = new computer('Hp');
+
+//  console.log(computer.Laptop());
+
+//--------------------------
+// question 17
+
