@@ -59,7 +59,7 @@ const car = {
 
     start: function () {
 
-        return "  you start the engin"
+        return "  you start the engin";
     }
 }
 
@@ -67,14 +67,22 @@ const car = {
 
 //--------------------------
 // question 7
-const obj1 = { name: "Aliahmad", age: 30 };
-const obj2 = { name: "Ali", age: 3 };
 
-if (JSON.stringify(obj1) === JSON.stringify(obj2)) {
-    // console.log("The objects have the same properties.");
-} else {
-    // console.log("The objects are different.");
+class Carcar {
+    constructor(make, modle, year) {
+        this.make = make;
+        this.modle = modle;
+        this.year = year;
+    }
+
 }
+
+Carcar.prototype.color="yello";
+const car1 = new Carcar("Toyota", "Camry", 2021);
+const car2 = new Carcar("Honda", "Civic", 2022);
+
+// console.log(car2.color);
+
 
 //--------------------------
 // question 8
@@ -137,15 +145,36 @@ class circle extends shape {
         super(color);
         this.radious = radious;
     }
-    calculatArea1(){
-        return Math.PI * Math.pow(this.radious,2);
+    calculatArea1() {
+        return Math.PI * Math.pow(this.radious, 2);
     }
 }
 
-const mycircle = new circle("green",3);
+const mycircle = new circle("green", 3);
 
 // console.log(mycircle.color);
 // console.log(mycircle.calculatArea1());
 
 //--------------------------
 // question 13
+
+ function add(){
+    let sum = 0;
+    for (let i = 0; i < arguments.length; i++) {
+     sum += arguments[i]; 
+    }
+    return sum;
+ }
+console.log(add(2,45,67,8,9,7));
+
+//--------------------------
+// question 14
+
+const obj1 = { name: "Aliahmad", age: 30 };
+const obj2 = { name: "Ali", age: 3 };
+
+if (JSON.stringify(obj1) === JSON.stringify(obj2)) {
+     console.log("These objects have the same properties.");
+} else {
+     console.log("These objects are different.");
+}
