@@ -273,21 +273,21 @@ var pperson = {
     ]
 
 
-} 
+}
 
 // console.log(pperson);
 
 for (const x of pperson.favoriteBooks) {
     // console.log(x);
-    
+
 }
 for (const x of pperson.friends[0].favoriteBooks) {
-     console.log(x);
-    
+    console.log(x);
+
 }
 
 console.log('----------------------------------');
 for (const x of pperson.friends[0].favoriteBooks) {
     console.log(x);
-   
+
 }
