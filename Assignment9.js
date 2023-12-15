@@ -88,7 +88,7 @@ class book {
 //--------------------------
 // question 9
 const mybook = new book("javascript", "Ali Ahmad Noori");
-console.log(mybook.Title + " was Written by " + mybook.Author);
+// console.log(mybook.Title + " was Written by " + mybook.Author);
 
 //--------------------------
 // question 10
@@ -100,7 +100,7 @@ class calculat {
     subtraction(a, b) {
         return a - b;
     }
-    // }
+    
 }
 
 const cul = new calculat();
@@ -110,3 +110,19 @@ const cul = new calculat();
 
 //--------------------------
 // question 11
+
+class shape{
+    constructor(color,width,height){
+        this.color=color;
+        this.width=width;
+        this.height=height;
+    }
+    calculatArea(){
+        return this.width * this.height;
+    }
+}
+
+const myshape = new shape("red",5,10);
+
+//   console.log(myshape.color);
+//  console.log(myshape.calculatArea());
