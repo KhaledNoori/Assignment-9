@@ -77,7 +77,7 @@ class Carcar {
 
 }
 
-Carcar.prototype.color="yello";
+Carcar.prototype.color = "yello";
 const car1 = new Carcar("Toyota", "Camry", 2021);
 const car2 = new Carcar("Honda", "Civic", 2022);
 
@@ -158,13 +158,13 @@ const mycircle = new circle("green", 3);
 //--------------------------
 // question 13
 
- function add(){
+function add() {
     let sum = 0;
     for (let i = 0; i < arguments.length; i++) {
-     sum += arguments[i]; 
+        sum += arguments[i];
     }
     return sum;
- }
+}
 // console.log(add(2,45,67,8,9,7));
 
 //--------------------------
@@ -184,17 +184,17 @@ if (JSON.stringify(obj1) === JSON.stringify(obj2)) {
 
 const person3 = {
 
- inform:function(){
-    return  this.id + " " + this.Name + " " + this.Address;
- }
+    inform: function () {
+        return this.id + " " + this.Name + " " + this.Address;
+    }
 }
 
 // console.log(person3.inform());
 
-const person4={
-    id:12,
-    Name:'Ali',
-    Address:'Herat Afghanistan',
+const person4 = {
+    id: 12,
+    Name: 'Ali',
+    Address: 'Herat Afghanistan',
 }
 
 // console.log(person3.inform.call(person4));
@@ -203,37 +203,91 @@ const person4={
 //--------------------------
 // question 16
 
-class computer{
-    constructor(Name){
-        this.Name=Name;
+class computer {
+    constructor(Name) {
+        this.Name = Name;
     }
-    static Laptop(){
+    static Laptop() {
         return "Dell";
     }
 }
 
- const comp = new computer('Hp');
+const comp = new computer('Hp');
 
 //  console.log(computer.Laptop());
 
 //--------------------------
 // question 17
 
-class phone{
+class phone {
 
-    constructor(brand){
+    constructor(brand) {
         this.phoneName = brand;
     }
-    set ph(x){
-        this.phoneName=x;
+    set ph(x) {
+        this.phoneName = x;
     }
 
-    get ph(){
+    get ph() {
         return this.phoneName;
     }
 }
 
 let p = new phone();
 
-p.ph='apple';
-console.log(p.ph);
+p.ph = 'apple';
+// console.log(p.ph);
+
+//--------------------------
+// question 18
+
+var pperson = {
+
+    id: 1000,
+    name: 'Ahmad',
+    favoriteBooks: [
+        { id: 1, name: "javascript", pagees: 456 },
+        { id: 2, name: "React.js", pagees: 1320 },
+    ],
+    Address: { country: "Afghanistan", province: "Hreat", district: "Ghurian" },
+
+    friends: [
+        {
+            id: 1098,
+            name: 'karim',
+            favoriteBooks: [
+                { id: 1, name: "css with jone ", pagees: 444 },
+                { id: 2, name: "React.js", pagees: 876 },
+            ],
+            Address: { country: "Afghanistan", province: "Hreat", district: "kerokh" },
+        },
+        {
+            id: 1099,
+            name: 'Mahmood',
+            favoriteBooks: [
+                { id: 1, name: "Node.js ", pagees: 765 },
+                { id: 2, name: "express.js", pagees: 2234 },
+            ],
+            Address: { country: "Afghanistan", province: "Hreat", district: "gozera" },
+        }
+    ]
+
+
+} 
+
+// console.log(pperson);
+
+for (const x of pperson.favoriteBooks) {
+    // console.log(x);
+    
+}
+for (const x of pperson.friends[0].favoriteBooks) {
+     console.log(x);
+    
+}
+
+console.log('----------------------------------');
+for (const x of pperson.friends[0].favoriteBooks) {
+    console.log(x);
+   
+}
