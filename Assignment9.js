@@ -100,7 +100,7 @@ class calculat {
     subtraction(a, b) {
         return a - b;
     }
-    
+
 }
 
 const cul = new calculat();
@@ -111,18 +111,41 @@ const cul = new calculat();
 //--------------------------
 // question 11
 
-class shape{
-    constructor(color,width,height){
-        this.color=color;
-        this.width=width;
-        this.height=height;
+class shape {
+    constructor(color, width, height) {
+        this.color = color;
+        this.width = width;
+        this.height = height;
     }
-    calculatArea(){
+    calculatArea() {
         return this.width * this.height;
     }
 }
 
-const myshape = new shape("red",5,10);
+const myshape = new shape("red", 5, 10);
 
 //   console.log(myshape.color);
 //  console.log(myshape.calculatArea());
+
+
+//--------------------------
+// question 12
+
+class circle extends shape {
+
+    constructor(color, radious) {
+        super(color);
+        this.radious = radious;
+    }
+    calculatArea1(){
+        return Math.PI * Math.pow(this.radious,2);
+    }
+}
+
+const mycircle = new circle("green",3);
+
+// console.log(mycircle.color);
+// console.log(mycircle.calculatArea1());
+
+//--------------------------
+// question 13
