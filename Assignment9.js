@@ -165,7 +165,7 @@ const mycircle = new circle("green", 3);
     }
     return sum;
  }
-console.log(add(2,45,67,8,9,7));
+// console.log(add(2,45,67,8,9,7));
 
 //--------------------------
 // question 14
@@ -174,7 +174,28 @@ const obj1 = { name: "Aliahmad", age: 30 };
 const obj2 = { name: "Ali", age: 3 };
 
 if (JSON.stringify(obj1) === JSON.stringify(obj2)) {
-     console.log("These objects have the same properties.");
+    //  console.log("These objects have the same properties.");
 } else {
-     console.log("These objects are different.");
+    //  console.log("These objects are different.");
 }
+
+//--------------------------
+// question 15
+
+const person3 = {
+
+ inform:function(){
+    return  this.id + " " + this.Name + " " + this.Address;
+ }
+}
+
+// console.log(person3.inform());
+
+const person4={
+    id:12,
+    Name:'Ali',
+    Address:'Herat Afghanistan',
+}
+
+// console.log(person3.inform.call(person4));
+// console.log(person3.inform.apply(person4));
